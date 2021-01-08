@@ -1,0 +1,22 @@
+*{
+    padding: o;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+ body{
+    font-family: sans-serif;
+}
+
+ body footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+ }
+
+ #placements .pimg{
+     text-align: center;
+ }
