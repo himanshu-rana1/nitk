@@ -30,23 +30,18 @@
                 <li class="nav-item">
                   <a class="nav-link active" data-toggle="pill" href="#home">Home</a>
                 </li>
-
                 <li class="nav-item">
                     <a class="nav-link" data-toggle="pill" href="#programmes">Programmes</a>
                 </li>
-
                 <li class="nav-item">
-                    <a class="nav-link" data-toggle="pill" href="#people">People</a>
+                    <a class="nav-link" id="placementData" data-toggle="pill" href="#placements">Placements</a>
                 </li>
-                
                 <li class="nav-item">
-                    <a class="nav-link" data-toggle="pill" href="#placements">Placements</a>
+                    <a class="nav-link" id="people" data-toggle="pill" href="#getPeople">People</a>
                 </li>
-
                 <li class="nav-item">
                     <a class="nav-link" data-toggle="pill" href="#COVID-19">COVID-19 Research</a>
                 </li>
-    
             </ul>
         </div>
     </nav>
@@ -78,16 +73,10 @@
             </div> 
         </div>
 
-        <div id="people" class="container tab-pane fade"><br>
-            <div class="hod">
-
-            </div>
-            <div class="professor">
-
-            </div>
-            <div class="assistant-professor">
-
-            </div>
+        <div id="programmes" class="container tab-pane fade"><br>
+            <h4>Under Graduate</h4><p>This is UG area</p>
+            <h4>Post Graduate</h4><p>PG area</p>
+            <h4>Doctorate</h4><p>Doctrate area</p>
         </div>
 
         <div id="placements" class="container tab-pane fade"><br>
@@ -99,12 +88,30 @@
            <br>
            <h6><b>Placement Statistics (Combined)</b></h6>
            <br>
-           <div class="pimg">
-               <img src="images/ps1.png">
+           <div>
+                <h4>B.Tech Statistics</h4>
+                <div  style="width: 750px; height: 750px;">
+                    <canvas id="myChart1"></canvas>
+                </div>
+                <br>
+                <h4>M.Tech Statistics</h4>
+                <div style="width: 750px; height: 750px;">
+                    <canvas id="myChart2"></canvas>
+                </div>
            </div>
-            
         </div>
         
+        <div id="getPeople" class="container tab-pane fade"><br>
+            <h4>Head of Department</h4><hr>
+            <div id="hod" class="d-flex"></div>
+            <br>
+            <h4>Professor</h4><hr>
+            <div id="professor" class="d-flex"></div>
+            <br>
+            <h4>Assistance Professor</h4><hr>
+            <div id="asstProf" class="d-flex"></div>
+            <br>
+        </div>
 
         <div id="COVID-19" class="container tab-pane fade"><br>
             <p>World Health Organization has declared the recent Novel Corona Virus, COVID-19 as Public Health Emergency of
@@ -121,7 +128,6 @@
             <br>
             <p>Please contact us for Grants and Collaboration.</p>      
         </div>
-
     </div>
 
 
@@ -146,6 +152,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/8b5e0cd93a.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js" integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw==" crossorigin="anonymous"></script>
     <script src="main.js"></script>
+    <script src="chart.js"></script>
 </body>
 </html>
