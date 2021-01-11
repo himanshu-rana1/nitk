@@ -42,6 +42,10 @@
                 <li class="nav-item">
                     <a class="nav-link" data-toggle="pill" href="#COVID-19">COVID-19 Research</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="pill" href="#researchandconsult">Research/Consultancy</a>
+                </li>
+                
             </ul>
         </div>
     </nav>
@@ -74,9 +78,36 @@
         </div>
 
         <div id="programmes" class="container tab-pane fade"><br>
-            <h4>Under Graduate</h4><p>This is UG area</p>
-            <h4>Post Graduate</h4><p>PG area</p>
-            <h4>Doctorate</h4><p>Doctrate area</p>
+            <div>
+                <h4  style = "color:blue;"><b>B.Tech (Computer Science and Engineering)</b></h4>
+                <hr>
+                <p>The B.Tech in Computer Science and Engineering is one of the most popular programmes at N.I.T.K Surathkal. The programme was stated in 1986 and has been designed to cater to global demands and offers a balanced coverage of hardware and software systems. The programme includes elective courses covering thrust areas such as Distributed Systems & Computing, Parallel Architectures & High performance computing, High-Speed Networks, Designing with Network Processors, Security and Embedded Systems Cloud Computing etc. The B.Tech. programme enjoys an enviable placement of almost 100% year after year. About 25 to 35% of the students pursue higher studies after their graduation, mostly in U.S with scholarship and even without fellowship.</p>
+                <br>
+                <p>Average Intake (per year) :110</p>
+                <br>
+                <p>Admission : Through JEE(Main) as per guidelines of MHRD</p>
+                <br>
+                <button class="btn-secondary btn-outline-dark rounded-pill" onclick="myBtechCurriculum()">B.Tech Curriculum</a>
+            </div>
+            <br>
+            <div>
+                <h4  style = "color:blue;"><b>M.Tech(CSE) and M.Tech(CSE-IS)</b></h4>
+                <hr>
+                <p>The department offers two post-graduate courses - M.Tech. in Computer Science and Engineering (CSE) and M.Tech in Computer Science and Engineering - Information Security (CSE-IS).</p>
+                <br>
+                <p>Admission through GATE -  as per guidelines of MHRD</p>
+                <br>
+                <button class="btn-secondary btn-outline-dark rounded-pill" onclick="myMtechCurriculum()">M.Tech Curriculum</a>
+            </div>
+            <br>
+            <div>
+                <h4 style = "color:blue;"><b>Ph. D. (Doctor of Phylosophy)</b></h4>
+                <hr>
+                <p>The department has a doctoral programme with an annual intake of 5-10 students per year. Admission to the doctoral programme is through a rigorous process of test and interview conducted by the department. The department now accomodated 54 research scholars working on diverse areas in computer science</p>
+                <a href="" id="phd">Detailed Information and Rules/Regulations about Ph.D. Programme</a>
+            </div>
+            <br>
+            
         </div>
 
         <div id="placements" class="container tab-pane fade"><br>
@@ -102,13 +133,16 @@
         </div>
         
         <div id="getPeople" class="container tab-pane fade"><br>
-            <h4>Head of Department</h4><hr>
+            <h4>Head of the Department</h4><hr>
             <div id="hod" class="d-flex"></div>
             <br>
-            <h4>Professor</h4><hr>
+            <h4>Professors</h4><hr>
             <div id="professor" class="d-flex"></div>
             <br>
-            <h4>Assistance Professor</h4><hr>
+            <h4>Associate Professors</h4><hr>
+            <div id="assoProf" class="d-flex"></div>
+            <br>
+            <h4>Assistant Professors</h4><hr>
             <div id="asstProf" class="d-flex"></div>
             <br>
         </div>
@@ -126,12 +160,78 @@
             <br>
             <p>Technical details of this open source project are available at <a href="https://indiacovid.seva.ml/" target="_blank">https://indiacovid.seva.ml/</a></p> 
             <br>
-            <p>Please contact us for Grants and Collaboration.</p>      
+            <p>Please contact us for Grants and Collaboration.</p>   
+            <br>
+            <br>
+            <br>   
         </div>
+         
+        <div id="researchandconsult" class="container tab-pane fade"><br>
+            <h4>R&D Projects</h4>
+            <ol>
+            <li>Information Security Education and awareness Phase-II-sponsored by DIT MCIT, PI: Dr. Alwyn Roshan Pais Co-PI: Dr. P. Santhi Thilagam, at the cost of 2.7 crore(Approx), 2015-2020</li>
+            <li>Design of a modular FPGA accelerated Chip Multiprocessor Architecture Simulator - sponsored by DST, PI: Dr. Basavaraj Talawar, at the cost of 26.9 Lakhs, 2016-2019</li>
+            <li>An automatic system for identification of phonological processes in children of age two and half to six and half years - sponsored by DST, PI: Dr. Shashidhar G. Koolagudi, Co-PI: Prof. Venkat Raja at the cost of 30.00 Lakhs, 2016-2019</li>
+            <li>Retinal cysts identification and quantification from low SNR optical coherence tomography scans using image processing techniques- sponsored by DST (SERB EMR grant) PI: Dr. Jeny Rajan, Co- PI: Dr. Shashidhar G Koolagudi and Dr. Abhishek Kothari at the cost of 33.5 lakhs(Approx), 2017-2019</li>
+            <li>Development of Tool for Detecting of Application Layer Distributed Denial of Service Attacks on Web Applications-- sponsored by MEITY Government of India, PI: Dr. P. Santhi Thilagam at the cost of 29.78 Lakhs, 2017-2019</li>
+            <li>Characterization and identification of dialects in Kannada Language- sponsored by DST-Science & Engineering Research Board(SERB) PI: Dr. Shashidhar G. Koolagudi at the cost of 35 Lakhs, 2017-2020</li>
+            </ol>
+            <br>
+            <h4>Consultancy</h4>
+            <table class="table table-dark table-hover">
+                <thead>
+                  <tr>
+                    <th style="color: chartreuse;">SI.NO.</th>
+                    <th style="color: chartreuse;">Title Of Consultancy</th>
+                    <th style="color: chartreuse;">Name Of Guide/Investigator</th>
+                    <th style="color: chartreuse;">Funding Agency</th>
+                    <th style="color: chartreuse;">Name of the Student involved</th>
+                    <th style="color: chartreuse;">Status/Amt.</th>
+                    <th style="color: chartreuse;">Year</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>01</td>
+                    <td>Consultancy work for IT Company at<br> Bangalore DataXu India Private Limited, Bangalore</td>
+                    <td>Dr.K.Chandrasekaran</td>
+                    <td>DataXu India Private Limited</td>
+                    <td>-</td>
+                    <td>Discussion Ongoing</td>
+                    <td> </td>
+                  </tr>
+                  <tr>
+                    <td>02</td>
+                    <td>Development of Face Detection and <br>Face Recognition System for IDrive Software (India) Pvt.  Ltd</td>
+                    <td>Dr. Jeny Rajan</td>
+                    <td>IDrive Software (India) Pvt.  Ltd</td>
+                    <td>Ravi Raja</td>
+                    <td>Completed Rs. 2.25 Lakhs</td>
+                    <td>2017-18</td>
+                  </tr>
+                  <tr>
+                      <td>03</td>
+                      <td>Artificial Intelligence based System to automatically classify images from PBC Inspection machines.</td>
+                      <td>Dr. Jeny Rajan</td>
+                      <td>Pixellogic Solutions Pvt. Ltd.</td>
+                      <td>-</td>
+                      <td>Ongoing Rs. 6.71 Lakhs</td>
+                      <td>2019-20</td>
+                  </tr>
+                  <tr>
+                      <td>04</td>
+                      <td>Future Internet Architecture for OPC UA and TSN based Distributed Control Systems.</td>
+                      <td>Dr. Mohit P Tahiliani</td>
+                      <td>ABB Global Industries and Services Pvt. Ltd., Bangalore</td>
+                      <td>-</td>
+                      <td>Completed Rs. 11.80 Lakhs</td>
+                      <td> 2019 (06 months)</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+
     </div>
-
-
-
 
     <footer class="page-footer bg-dark">
 
@@ -140,6 +240,7 @@
                 <div class="col-md-3 mx-auto mb-4">
                     <h6 class="font-weight-bold">CONTACT US</h6>
                     <hr class="big-success mb-4 mt-0 d-inline-block mx-auto" style="width: 85px; height: 2px">
+                    <p>Hot line: +91-0824-2474053</p> 
                     
                 </div>
             </div>

@@ -27,3 +27,40 @@ const getPeople = () => {
 people.addEventListener('click', getPeople);
 
 
+function myBtechCurriculum() {
+    fetch('http://localhost:9091/resource/get/Btech/2019/Curriculum').then(response => {
+        console.log(response);
+        return response.blob();
+    }).then(data => {
+        console.log(data);
+        const blob = new Blob([data], {type: 'application/pdf'});
+        const url = window.URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.style.display = 'none';
+        a.href = url;
+        a.download = 'Btech_2019_Curriculum.pdf';
+        document.body.appendChild(a);
+        a.click();
+        window.URL.revokeObjectURL(url);
+    });
+}
+
+function myMtechCurriculum() {
+    fetch('http://localhost:9091/resource/get/Mtech/2019/Curriculum').then(response => {
+        console.log(response);
+        return response.blob();
+    }).then(data => {
+        console.log(data);
+        const blob = new Blob([data], {type: 'application/pdf'});
+        const url = window.URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.style.display = 'none';
+        a.href = url;
+        a.download = 'Mtech_2019_Curriculum.pdf';
+        document.body.appendChild(a);
+        a.click();
+        window.URL.revokeObjectURL(url);
+    });
+}
+
+
