@@ -63,4 +63,25 @@ function myMtechCurriculum() {
     });
 }
 
+const achievements = document.getElementById('achieve');
+
+const getAchievements = () => {
+    fetch('http://localhost:9091/achievements/get').then(response => {
+        console.log(response);
+        return response.json();
+    }).then(
+        responseData => {
+            for(let achievement of responseData){
+                console.log(achievement);
+                let p = document.createElement('p'); 
+                p.innerText = String(achievement.description);
+                let x = document.getElementById(achievement.name);
+                x.appendChild(p);
+            }
+        }
+    );
+    achievements.removeEventListener('click', getAchievements);
+};
+achievements.addEventListener('click', getAchievements);
+
 
